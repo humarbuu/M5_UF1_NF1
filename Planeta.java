@@ -6,6 +6,9 @@
 public class Planeta 
 {
     //DOCUMENTAR
+    /**
+     *Hem d'introduir el nom, el diametre i el pes del planeta que estem afegint.
+     */
     String nom;
     int diametre;
     int pes;    
@@ -26,6 +29,10 @@ public class Planeta
 
     //DOCUMENTAR
     
+    /**
+     * @return 1, quan el planeta es enano
+     * @return 0 quan el planeta no es enano
+     */
     public int planetaEnano()
     {
         if(this.diametre < 1300)
@@ -39,6 +46,9 @@ public class Planeta
     }
 
     //DOCUMENTAR
+    /**
+     * EL planeta expandeix el seu diametre * 3 
+     */
     public void expansio()
     {        
         this.diametre= this.diametre*3;

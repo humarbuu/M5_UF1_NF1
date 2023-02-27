@@ -36,7 +36,13 @@ public class PlanetaTest {
     @Test 
     public void testExpansio()
     {
+        String nom= "urus";
+        int diametre = 1500;
+        int pes= 50000;
+        Planeta planeta = new Planeta(nom, diametre,pes);
+        planeta.expansio();
         
+        assertEquals(4500,planeta.getDiametre());
         //assertEquals(expected, actual);
 
     }
