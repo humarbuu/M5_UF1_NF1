@@ -25,11 +25,15 @@ public class Planeta
 
     //DOCUMENTAR
     //Contructor buit
+    /**
+     * Aquesta funció es un planeta buit
+     */
     public Planeta(){}
 
     //DOCUMENTAR
     
     /**
+     * Esta funció ens dirà si el planeta té un diametre menor de 1300 significarà que es enano, pero si el diametre es major a 1300 significa que no es enano 
      * @return 1, quan el planeta es enano
      * @return 0 quan el planeta no es enano
      */
@@ -57,6 +61,15 @@ public class Planeta
     }
 
     //DOCUMENTAR
+    /**
+     * @param meteorito
+     * @return
+     *  poden xocar amb un meteorit i això afectarà al seu pes, ja que, perdran
+    una part del mateix. Concretament, quan hagi una col·lisió, perdran el mateix pes que el pes del
+    propi meteorit. Si després de la col·lisió, el seu pes es igual o superior a 1800Kg, retornarem 1,
+    sinó, retornarem 0 i, a més a més en aquest cas, el diàmetre del planeta augmentarà la meitat del
+    que pesava el meteorit.
+     */
     public int colisio(int meteorito)
     {
         //ACABAR
